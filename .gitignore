@@ -1,0 +1,10 @@
+.DS_Store
+
+*.lock
+
+# for Node
+node_modules/
+
+# for Hugo generated files
+public/
+resources/

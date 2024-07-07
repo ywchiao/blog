@@ -1,0 +1,47 @@
+baseURL = 'https://ywchiao.github.io/blog/'
+languageCode = 'zh-tw'
+title = '生活隨記'
+theme = 'lidtea'
+enableGitInfo = true
+hasCJKLanguage = true
+
+[markup]
+  [markup.highlight]
+    noclasses = false
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      wrapStandAloneImageWithinParagraph = false
+      [markup.goldmark.parser.attribute]
+        block = true
+    # 用來允許 Markdown 文件內的 raw html
+    [markup.goldmark.renderer]
+      unsafe = true
+    # 用來處理 CJK Markdown 文件中換行字元和強調字元 (**) 的空白問題
+    [markup.goldmark.extensions.CJK]
+      enable=true
+      eastAsianLineBreaks=true
+      escapedSpace=true
+
+[params]
+  author = 'Yiwei Chiao'
+  subtitle = '程式生活手記'
+
+[[menus.main]]
+name = '首頁'
+pageRef = '/'
+weight = 10
+
+[[menus.main]]
+name = '手記'
+pageRef = '/posts'
+weight = 20
+
+[[menus.main]]
+name = '標籤'
+pageRef = '/tags'
+weight = 30
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"

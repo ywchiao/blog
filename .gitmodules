@@ -1,0 +1,3 @@
+[submodule "themes/lidtea"]
+	path = themes/lidtea
+	url = https://github.com/ywchiao/lidtea.git
